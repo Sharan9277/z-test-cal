@@ -139,7 +139,7 @@ export default function ZTestCalculator() {
     e.preventDefault();
     setSubmitted(true);
 
-    const response = await fetch("http://127.0.0.1:5000/calculate", {
+    const response = await fetch("https://z-test-calculator.onrender.com/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
